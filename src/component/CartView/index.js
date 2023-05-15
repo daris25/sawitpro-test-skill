@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./styles";
 import CardCart from "../CardCart";
 import { useSelector } from "react-redux";
@@ -7,7 +7,6 @@ import { cartMoviesFetch } from "../../store/actions";
 function CartView(props) {
   const { onShowCart, onCloseCart } = props;
   const cart = useSelector((state) => state.cart);
-  const [selectItem, setSelectItem] = useState([]);
 
   const onCLose = () => {
     onCloseCart(false);
@@ -22,6 +21,12 @@ function CartView(props) {
   const deleteItems = (val) => {
     cartMoviesFetch([]);
     alert("All Movie aleady remove!");
+  };
+
+  const sumTotal = () => {
+    return cart?.cartResponse?.length > 0
+      ? cart?.cartResponse?.map((res) => res.price).reduce((i, v) => i + v)
+      : 0;
   };
 
   return (
@@ -50,6 +55,10 @@ function CartView(props) {
             const psh = { ...res, i };
             return <CardCart key={i} {...psh} delItem={() => removeItem(i)} />;
           })}
+        </div>
+        <div style={styles.boxPricein} className="flexRowBetween">
+          <label style={styles.font20}>Subtotal</label>
+          <label style={styles.fontPrice}>Rp {sumTotal()},-</label>
         </div>
       </div>
     </div>

@@ -25,6 +25,16 @@ const styles = {
   },
   titleViewcart: { fontSize: 30, fontWeight: "bold" },
   closeCart: { width: 50, height: 50 },
+  font20: {
+    fontSize: 20,
+  },
+  fontPrice: {
+    fontSize: 25,
+    fontWeight: "bold",
+  },
+  boxPricein: {
+    marginTop: 20,
+  },
 };
 
 export default styles;
