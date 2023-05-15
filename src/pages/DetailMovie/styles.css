@@ -1,0 +1,46 @@
+.flexDetail {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.imgBannerDetail {
+  width: 25vw;
+}
+
+.textTItleDesc {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.text01 {
+  width: 10vw;
+  color: white;
+}
+
+.text02 {
+  color: white;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.justifyText {
+  text-align: justify;
+}
+
+.viewRight {
+  margin-left: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}

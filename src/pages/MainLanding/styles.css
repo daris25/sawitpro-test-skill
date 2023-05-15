@@ -1,0 +1,32 @@
+.flexWrapRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.flexMr {
+  margin: 10px;
+}
+
+.flexRowBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.felxRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexBetween {
+  justify-content: space-between;
+}

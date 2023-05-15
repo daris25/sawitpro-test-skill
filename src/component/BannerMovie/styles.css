@@ -1,0 +1,68 @@
+.flexCardBanner {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.flexCardLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.textSubtitle {
+  font-size: 15px;
+  color: white;
+  text-align: justify;
+}
+
+.imgBanner {
+  width: 15vw;
+  margin-left: 100px;
+  box-shadow: 20px;
+}
+
+.textTitlePrice {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.textPrice {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.flexBtn {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.btnAdd {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: crimson;
+  box-shadow: 10px;
+  border-radius: 5px;
+  color: white;
+}

@@ -1,0 +1,19 @@
+.containerHeader {
+  /* height: 50px; */
+  width: 99%;
+  background-color: #8c8888;
+  padding-bottom: 20px;
+}
+
+.boxHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconCart {
+  width: 50px;
+  height: 50px;
+  margin-left: -50px;
+}
